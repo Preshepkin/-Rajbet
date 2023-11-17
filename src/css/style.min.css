@@ -24,8 +24,8 @@ h1, h2, h3, h4 {
 }
 
 h2 {
+  margin-top: 8px;
   position: relative;
-  z-index: 1;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -37,17 +37,19 @@ h2 {
 .page-title__right {
   position: relative;
   width: 603px;
-  margin-bottom: 20px;
+  height: 80px;
+  text-align: right;
 }
 .page-title__right:before {
   content: "";
   position: absolute;
-  top: -8px;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 653px;
   height: 96px;
   background: url("../image/svg/line-right.svg") no-repeat;
+  margin-bottom: 20px;
 }
 
 .txt-c__fz18 {
@@ -115,6 +117,7 @@ h2 {
 .container {
   width: 1140px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .br-4 {
@@ -131,10 +134,6 @@ h2 {
 
 .br-12 {
   border-radius: var(--bordrad-12);
-}
-
-.txt-right {
-  text-align: var(--align-right);
 }
 
 html {
@@ -318,12 +317,70 @@ html {
 
 .welcome {
   position: relative;
-  height: 614px;
+  height: 700px;
   background-color: var(--dark);
 }
 .welcome-wrapper {
   padding-top: 50px;
 }
+.welcome-wrapper__cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .welcome-wrapper__descr {
+  margin-top: 28px;
   width: 653px;
+}
+.welcome-wrapper__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.welcome-wrapper__picture img {
+  position: absolute;
+}
+.welcome-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 652px;
+}
+.welcome-table__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 326px;
+  background-color: var(--green-light-middle);
+}
+.welcome-table li {
+  padding: 10px 10px;
+  list-style-type: none;
+  border: 1px solid var(--dark);
+}
+.welcome-table__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 326px;
+  background-color: var(--green-middle);
+}
+.welcome-table li {
+  padding: 10px 10px;
+  list-style-type: none;
+  border: 1px solid var(--dark);
 }

@@ -1,8 +1,38 @@
 .welcome
 	position: relative
-	height: 614px
+	height: 700px
 	background-color: var(--dark)
 	&-wrapper
 		padding-top: 50px
+		&__cover
+			display: flex
+			justify-content: space-between
 		&__descr
+			margin-top: 28px
 			width: 653px
+		&__picture	
+			display: flex
+			justify-content: flex-end	
+			img
+				position: absolute
+	&-table
+		display: flex
+		width: 652px	
+		&__left
+			display: flex
+			flex-direction: column
+			width: 326px	
+			background-color: var(--green-light-middle)
+		li
+			padding: 10px 10px
+			list-style-type: none
+			border: 1px solid var(--dark)
+		&__right
+			display: flex
+			flex-direction: column
+			width: 326px	
+			background-color: var(--green-middle)
+		li
+			padding: 10px 10px
+			list-style-type: none
+			border: 1px solid var(--dark)	
