@@ -11,31 +11,53 @@ h1,h2,h3,h4
 // 	line-height: 60px
 // 	text-transform: uppercase	
 h2
-	margin-top: 8px
 	position: relative
+	// top: 8px
 	font-size: 36px
 	font-style: normal
 	font-weight: 700
 	line-height: 40px
 	text-transform: capitalize
 	color: var(--white)
+	margin-bottom: 0
 
 //  >>ТИТУЛ СТРАНИЦЫ<<
-.page-title__right
-	position: relative
-	width: 603px
-	height: 80px
-	text-align: right
-	&:before
-		content:''
-		position: absolute
-		top: 0
-		left: 0
-		bottom: 0
-		width: 653px
+.page-title
+	display: flex
+	&__right
+		display: flex
+		justify-content: flex-end
+		position: relative
+		text-align: right
+		width: 603px
 		height: 96px
-		background: url('../image/svg/line-right.svg') no-repeat
-		margin-bottom: 20px
+		align-items: center
+		&:before
+			content:''
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			width: 653px
+			height: 96px
+			background: url('../image/svg/line-right.svg') no-repeat
+			margin-bottom: 20px
+	&__left
+		display: flex
+		justify-content: flex-start
+		position: relative
+		width: 613px
+		height: 96px
+		align-items: center
+		&:before
+			content:''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			width: 653px
+			height: 96px
+			background: url('../image/svg/line-left.svg') no-repeat
 
 
 
@@ -44,31 +66,35 @@ h2
 
 	// >>(ТЕКСТОВОЙ СТИЛЬ)<<
 
-.txt-c__fz18
+.txt__fz18
 	font-size: 18px
 	font-style: normal
 	font-weight: 700
 	line-height: 20px
+	margin-bottom: 0
 
-.txt-c__fz16
+.txt__fz16
 	font-size: 16px
 	font-style: normal
 	font-weight: 400
 	line-height: 20px
 	color: var(--white)
+	margin-bottom: 0
 
-.txt-c__fz14
+.txt__fz14
 	font-size: 14px
 	font-style: normal
 	font-weight: 600
 	line-height: 18px
 	text-transform: uppercase
+	margin-bottom: 0
 
-.txt-c__fz12	
+.txt__fz12	
 	font-size: 12px
 	font-style: normal
 	font-weight: 400
 	line-height: 16px	
+	margin-bottom: 0
 
 	// >>(СЛЫЛКА)<<
 .txt-a
@@ -76,13 +102,15 @@ h2
 	font-weight: 400
 	line-height: 15px
 	text-transform: capitalize
+	margin-bottom: 0
 		
 .txt-86
 	font-size: 86px
 	font-style: normal
 	font-weight: 900
 	line-height: 77px
-	text-transform: uppercase		
+	text-transform: uppercase
+	margin-bottom: 0		
 
 
 
