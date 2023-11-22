@@ -10,9 +10,8 @@ h1,h2,h3,h4
 // 	font-weight: 500
 // 	line-height: 60px
 // 	text-transform: uppercase	
-h2
+h1
 	position: relative
-	// top: 8px
 	font-size: 36px
 	font-style: normal
 	font-weight: 700
@@ -24,6 +23,7 @@ h2
 //  >>ТИТУЛ СТРАНИЦЫ<<
 .page-title
 	display: flex
+	justify-content: center
 	&__right
 		display: flex
 		justify-content: flex-end
@@ -41,7 +41,7 @@ h2
 			width: 653px
 			height: 96px
 			background: url('../image/svg/line-right.svg') no-repeat
-			margin-bottom: 20px
+
 	&__left
 		display: flex
 		justify-content: flex-start
@@ -58,7 +58,13 @@ h2
 			width: 653px
 			height: 96px
 			background: url('../image/svg/line-left.svg') no-repeat
-
+	&__yellow-main
+		display: inline-block
+		color: var(--yellow-main)
+	&__green-very-light	
+		display: inline-block
+		color: var(--green-very-light)
+		margin-bottom: 30px	
 
 
 
