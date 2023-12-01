@@ -25,6 +25,14 @@ h1
 		font-weight: 500
 		line-height: 60px
 		color: var(--white)
+h2
+	font-family: Poppins
+	font-size: 32px
+	font-style: normal
+	font-weight: 600
+	line-height: 30px
+	text-transform: capitalize
+	color: var(--yellow-main)
 
 //  >>ТИТУЛ СТРАНИЦЫ<<
 .page-title
@@ -32,12 +40,13 @@ h1
 	justify-content: center
 	&__right
 		display: flex
-		justify-content: flex-end
+		justify-content: center
+		align-items: center
 		position: relative
 		text-align: right
+		margin-left: -20px
 		width: 603px
 		height: 96px
-		align-items: center
 		&:before
 			content:''
 			position: absolute
@@ -47,7 +56,8 @@ h1
 			width: 653px
 			height: 96px
 			background: url('../image/svg/line-right.svg') no-repeat
-
+		&-end
+			justify-content: flex-end
 	&__left
 		display: flex
 		justify-content: flex-start
