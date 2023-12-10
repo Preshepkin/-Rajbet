@@ -1,15 +1,6 @@
 h1,h2,h3,h4
 	margin: 0
 
-
-
-
-// .h1
-// 	font-size: 45px
-// 	font-style: normal
-// 	font-weight: 500
-// 	line-height: 60px
-// 	text-transform: uppercase	
 h1
 	position: relative
 	font-size: 36px
@@ -19,12 +10,6 @@ h1
 	text-transform: capitalize
 	color: var(--white)
 	margin-bottom: 0
-	&__fz45
-		font-size: 45px
-		font-style: normal
-		font-weight: 500
-		line-height: 60px
-		color: var(--white)
 h2
 	font-family: Poppins
 	font-size: 32px
@@ -34,17 +19,15 @@ h2
 	text-transform: capitalize
 	color: var(--yellow-main)
 
-//  >>ТИТУЛ СТРАНИЦЫ<<
-.page-title
+//  >> ТИТУЛ СТРАНИЦЫ <<
+.title
 	display: flex
 	justify-content: center
 	&__right
 		display: flex
-		justify-content: center
 		align-items: center
+		text-align: end
 		position: relative
-		text-align: right
-		margin-left: -20px
 		width: 603px
 		height: 96px
 		&:before
@@ -56,8 +39,6 @@ h2
 			width: 653px
 			height: 96px
 			background: url('../image/svg/line-right.svg') no-repeat
-		&-end
-			justify-content: flex-end
 	&__left
 		display: flex
 		justify-content: flex-start
@@ -74,37 +55,31 @@ h2
 			width: 653px
 			height: 96px
 			background: url('../image/svg/line-left.svg') no-repeat
-	&__yellow-main
+	&__yellow
 		display: inline-block
 		color: var(--yellow-main)
-	&__green-very-light	
+	&__green
 		display: inline-block
 		color: var(--green-very-light)
 		margin-bottom: 30px	
 
-
-
-
-
-	// >>(ТЕКСТОВОЙ СТИЛЬ)<<
 .fw600
 	font-weight:600
 .fw400
 	font-weight:400	
 
-.txt__fz20
-	font-size: 20px
-	line-height: 20px
-	color: var(--white)
-
-
-
-
-.txt__fz18
-	font-size: 18px
+.txt__fz12	
+	font-size: 12px
 	font-style: normal
-	line-height: 20px
-	color: var(--white)
+	font-weight: 400
+	line-height: 16px	
+	margin-bottom: 0
+
+.txt__fz14
+	font-size: 14px
+	font-style: normal
+	font-weight: 600
+	line-height: 18px
 	text-transform: uppercase
 	margin-bottom: 0
 
@@ -116,22 +91,34 @@ h2
 	color: var(--white)
 	margin-bottom: 0
 
-.txt__fz14
-	font-size: 14px
+.txt__fz18
+	font-size: 18px
 	font-style: normal
-	font-weight: 600
-	line-height: 18px
+	line-height: 20px
+	color: var(--white)
+	text-transform: uppercase
+	margin-bottom: 0	
+
+.txt__fz20
+	font-size: 20px
+	line-height: 20px
+	color: var(--white)
+.fz32 
+	font-size: 32px
+	font-style: normal
+	line-height: 30px
+	text-transform: capitalize
+	color: var(--green-very-light)	
+
+.txt-86
+	font-size: 86px
+	font-style: normal
+	font-weight: 900
+	line-height: 77px
 	text-transform: uppercase
 	margin-bottom: 0
 
-.txt__fz12	
-	font-size: 12px
-	font-style: normal
-	font-weight: 400
-	line-height: 16px	
-	margin-bottom: 0
-
-	// >>(СЛЫЛКА)<<
+	// >>( СЛЫЛКА )<<
 .txt-a
 	font-size: 14px
 	font-weight: 400
@@ -139,14 +126,7 @@ h2
 	text-transform: capitalize
 	margin-bottom: 0
 		
-.txt-86
-	font-size: 86px
-	font-style: normal
-	font-weight: 900
-	line-height: 77px
-	text-transform: uppercase
-	margin-bottom: 0		
-
+// >> ШИРИНА <<
 .w595
 	width: 595px
 

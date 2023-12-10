@@ -1,5 +1,6 @@
 .button
 	display: flex
+	justify-content: center
 	align-items: center
 	&__head
 		padding: 10px 
@@ -11,14 +12,14 @@
 		&:hover
 			transition:	var(--transition)
 			background-color: var(--green-light-middle)
-	&-main
+	&__main
 		position: relative
 		display: flex
 		justify-content: space-between
 		align-items: center
 		width: 410px
 		cursor: pointer
-		&__left
+		&-left
 			position: relative
 			padding: 0 21px
 			transition: all 0.5s
@@ -38,7 +39,7 @@
 				width: 20px
 				height: 20px
 				background: url('../image/svg/download.svg') center center/cover no-repeat
-		&__right
+		&-right
 			position: relative
 			padding: 0 53px
 			width: 200px
@@ -61,7 +62,7 @@
 				width: 20px
 				height: 20px
 				background: url('../image/svg/sign-up.svg') center center/cover no-repeat	
-		&__link
+		&-link
 			font-size: 16px
 			font-style: normal
 			font-weight: 500
@@ -69,7 +70,20 @@
 			text-transform: uppercase
 			text-decoration: none
 			color: var(--white)	
-
+	&__add
+		color: var(--white)
+		padding: 18px 20px
+		border-radius: var(--bordrad-8)
+		background: var(--green-light)
+		transition: all 0.5s
+		cursor: pointer
+		width: 164px
+		margin-bottom: 21px
+		&:hover
+			transition: all 0.5s
+			border-radius: var(--bordrad-20)
+			// width: 144px
+			
 	
 			
 			
