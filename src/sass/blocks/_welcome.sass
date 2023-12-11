@@ -5,34 +5,10 @@
 	padding-bottom: 40px
 	&__wrapper
 		display: flex
-		&-items
-			display: flex
-			flex-direction: column
-			justify-content: space-between
-		&-descr
-			margin-top: 20px
-			width: 653px
-			margin-bottom: 30px
-		&-picture	
-
-	&__table
+	&__items
 		display: flex
+		flex-wrap: wrap
+	&__descr
+		margin-top: 20px
 		width: 653px
-		&-link
-			padding: 10px 10px
-			list-style-type: none
-			border: 1px solid var(--dark)
-		&-left
-			display: flex
-			flex-direction: column
-			width: 326px	
-			background-color: var(--green-light-middle)
-			ul
-				display: contents
-		&-right
-			display: flex
-			flex-direction: column
-			width: 326px	
-			background-color: var(--green-middle)
-			ul
-				display: contents
+		margin-bottom: 30px

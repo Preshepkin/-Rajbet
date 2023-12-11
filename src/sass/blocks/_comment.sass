@@ -1,27 +1,42 @@
 .comment
 	background: var(--dark-grey)
-	&__title
+	&_title
 		padding-top: 40px
 		padding-bottom: 20px
 	&__wrapper	
 
-	&__forma	
+	&-forma	
 		display: flex
 		flex-direction: column
-	input	
-		padding: 18px 20px
-		border-radius: var(--bordrad-8)
-		background: #5F5F5F
-		margin-bottom: 18px
-		&::placeholder
-			color: var(--white)	
-	textarea
-		padding: 18px 20px
-		border-radius: var(--bordrad-8)
-		background: #5F5F5F
-		resize: none
-		width: 533px
-		height: 188px
-		margin-bottom: 18px
-		&::placeholder
-			color: var(--white)	
+		&__input	
+			padding: 18px 20px
+			border-radius: var(--bordrad-8)
+			background: #5F5F5F
+			margin-bottom: 18px
+			border: none
+			&::placeholder
+				color: var(--white)	
+		&__textarea
+			padding: 18px 20px
+			border-radius: var(--bordrad-8)
+			background: #5F5F5F
+			resize: none
+			width: 533px
+			height: 188px
+			margin-bottom: 18px
+			border: none
+			&::placeholder
+				color: var(--white)	
+		&__button
+			color: var(--white)
+			padding: 18px 20px
+			border-radius: var(--bordrad-8)
+			background: var(--green-light)
+			transition: all 0.5s
+			cursor: pointer
+			width: 164px
+			margin-bottom: 21px
+			border: none
+			&:hover
+				transition: all 0.5s
+				border-radius: var(--bordrad-20)

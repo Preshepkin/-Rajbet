@@ -10,6 +10,14 @@ h1
 	text-transform: capitalize
 	color: var(--white)
 	margin-bottom: 0
+.h1
+	font-size: 45px
+	font-style: normal
+	font-weight: 500
+	line-height: 60px
+	text-transform: uppercase
+	color: var(--white)
+	margin-bottom: 0
 h2
 	font-family: Poppins
 	font-size: 32px
@@ -23,7 +31,7 @@ h2
 .title
 	display: flex
 	justify-content: center
-	&__right
+	&_right
 		display: flex
 		align-items: center
 		text-align: end
@@ -39,7 +47,7 @@ h2
 			width: 653px
 			height: 96px
 			background: url('../image/svg/line-right.svg') no-repeat
-	&__left
+	&_left
 		display: flex
 		justify-content: flex-start
 		position: relative
@@ -55,14 +63,18 @@ h2
 			width: 653px
 			height: 96px
 			background: url('../image/svg/line-left.svg') no-repeat
-	&__yellow
+	&_yellow
 		display: inline-block
 		color: var(--yellow-main)
-	&__green
+	&_green
 		display: inline-block
 		color: var(--green-very-light)
 		margin-bottom: 30px	
-
+	&_end
+		justify-content: flex-end
+	&_start
+		justify-content: flex-start
+		
 .fw600
 	font-weight:600
 .fw400
