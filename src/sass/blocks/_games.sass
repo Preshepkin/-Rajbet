@@ -3,30 +3,42 @@
 	padding-bottom: 40px
 	&__wrapper
 		display: flex
-		&-items
-			// display: flex
-			// justify-content: space-between
-		&-picture
-		&-img
-			margin-bottom: 10px	
-		&-subtxt
-			margin-left: 20px
-		&-descr
-			margin-top: 20px
-			width: 653px
-			margin-bottom: 10px
-		&-element	
-			overflow: hidden
-			width: 653px
-			border-radius: var(--bordrad-8)	
-			background-color: var(--green-middle)
-		&-name
+	&__content
+		// display: flex
+		// justify-content: space-between
+	// &__picture
+	// 	margin-bottom: 10px
+	&__img
+		margin-bottom: 10px	
+	&__main-txt
+		margin-top: 20px
+		margin-bottom: 10px
+	&__page
+		display: flex
+		flex-direction: column
+		align-items: center	
+		// width: calc(43% - 20px)
+	&__img-txt
+		width: 90%
+
+	&-descr
+		margin-top: 20px
+		width: 653px
+		margin-bottom: 10px
+.item		
+	&-element	
+		overflow: hidden
+		width: 653px
+		border-radius: var(--bordrad-8)	
+		background-color: var(--green-middle)
+		&__name
 			display: block
 			padding: 10px 10px	
 			background-color:  var(--green-light-middle)
-		&-txt
+		&__txt
 			padding: 10px 10px	
 
 
-// .mb
-// 	margin-bottom: 0				
+
+.mb
+	margin-bottom: 0				
