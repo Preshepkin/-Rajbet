@@ -3,6 +3,7 @@
 	padding-bottom: 20px
 	&__wrapper
 		display: flex
+		flex-wrap: wrap
 		justify-content: space-between
 	// &__wrapper > div
 	// 	width:33%
@@ -40,6 +41,30 @@
 .social
 	&__downloads
 		display: flex
-		width: 197px
 		justify-content: space-between		
+
+	&__picture
+		display: inline-block
+		padding-right: 4px	
+		img
+			object-fit: cover
+			width: 100%
 		
+
+
+// !xxl
+@media (max-width: 1399px)
+
+// !xl
+@media (max-width: 1199px)
+
+// !lg
+@media (max-width: 991px)
+
+// !md
+@media (max-width: 767px)
+
+
+// !sm
+@media (max-width: 575px)  
+	

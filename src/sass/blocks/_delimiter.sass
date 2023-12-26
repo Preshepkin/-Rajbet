@@ -1,10 +1,31 @@
 .delimiter
     background: var(--green-light-middle)
     &__wrapper
-        padding-top: 35px   
-        padding-bottom: 35px
-    &-item
         display: flex
-        justify-content: center   
-        &__icons
-            padding-right: 94px
+        justify-content: center
+        &_top
+            padding-top: 35px   
+            padding-bottom: 35px
+.right
+    padding-right: 94px
+         
+
+// !xxl
+@media (max-width: 1399px)
+
+// !xl
+@media (max-width: 1199px)
+
+// !lg
+@media (max-width: 991px)
+
+// !md
+@media (max-width: 767px)
+    .right
+         padding-right: 24px
+
+// !sm
+@media (max-width: 575px)  
+    .right
+         padding-right: 14px
+    
